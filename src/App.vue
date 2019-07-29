@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
     <button class="mockBtn" @click="mockTest">Mock测试</button>
     <div class="mockData">{{mockData}}</div>
   </div>
@@ -30,7 +28,7 @@ export default {
       }).then(response => {
         console.log("mockTest response: " + response)
         let data = response.data;
-        this.mockData = data.data.fullName;
+        this.mockData = data.code;
       }).catch(reject => {
         console.log("mockTest: " + reject.toString())
       })

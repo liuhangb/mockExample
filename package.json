@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@babel/register": "^7.5.5",
     "axios": "^0.19.0",
     "core-js": "^2.6.5",
     "mockjs": "^1.0.1-beta3",
