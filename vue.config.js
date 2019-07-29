@@ -25,13 +25,12 @@ module.exports = {
             // change xxx-api/login => mock/login
             // detail: https://cli.vuejs.org/config/#devserver-proxy
             [process.env.VUE_APP_BASE_API]: {
-                target: `http://localhost:${port}/mock`,
+                // 填写easymock的接口url
+                target: `https://easy-mock.com/mock/5d3eb3dfe479d640eedd8b54/mock`,
                 changeOrigin: true,
                 pathRewrite: {
                     ['^' + process.env.VUE_APP_BASE_API]: ''
                 }
             }
-        },
-        after: require('./mock/mock-server.js')
-    },
+        },},
 }
