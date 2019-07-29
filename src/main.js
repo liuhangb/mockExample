@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
-import '../mock/index'
+import { mockXHR } from '../mock'
+
+mockXHR();
 
 Vue.config.productionTip = false
 
